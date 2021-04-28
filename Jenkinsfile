@@ -4,7 +4,7 @@ agent any
   stages {
     stage('abc'){
       steps {
-      sh "kubectl apply -f --kubeconfig admin.conf"
+      sh "kubectl apply -f deploy.yaml --kubeconfig admin.conf"
       }
     }
   }
